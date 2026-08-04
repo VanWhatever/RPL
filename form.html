@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <title>Formulir</title>
+    <body>
+        <form>
+            <table
+                action="proses.php" method="post" enctype="multipart/form-data">
+                <tr>
+                    <td><label for="nama">Nama</label></td>
+                    <td><input type="text" required placeholder="Nama"></td>
+                </tr>
+                <tr>
+                    <td><label for="nomor-hp">Nomor HP:</label></td>
+                    <td><input type="tel" required placeholder="Nomor"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" required placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td><label>Jenis Kelamin:</label></td>
+                    <td>
+                        <input type="radio" id="laki-laki" name="jenis-kelamin" value="laki-laki" required>
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan" required>
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="agama">Agama:</label></td>
+                    <td>
+                        <select id="agama" name="agama" required>
+                            <option value="">Pilih Agama</option>
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="budha">Budha</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Jenis Kelamin:</label></td>
+                    <td>
+                        <input type="radio" id="laki-laki" name="jenis-kelamin" value="laki-laki" required>
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan" required>
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="makanan">Makanan Favorit:</label></td>
+                    <td>
+                        <input type="checkbox" id="nasi-goreng" name="makanan[]" value="Nasi Goreng">
+                        <label for="nasi-goreng">Nasi Goreng</label><br>
+                        <input type="checkbox" id="mie-goreng" name="makanan[]" value="Mie Goreng">
+                        <label for="mie-goreng">Mie Goreng</label><br>
+                        <input type="checkbox" id="sate" name="makanan[]" value="Sate">
+                        <label for="sate">Sate</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="alamat">Alamat:</label></td>
+                    <td>
+                        <textarea required placeholder="Ketik Di Sini" rows="4" cols="50" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tanggal-lahir">Tanggal Lahir:</label></td>
+                    <td>
+                        <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pesan">Pesan:</label></td>
+                    <td>
+                        <textarea required placeholder="Ketik Di Sini" rows="4" cols="50" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="file">Kirim File:</label></td>
+                    <td>
+                        <input type="file" required placeholder="File">
+                    </td>
+                </tr>
+            </form>
+        </body>
+    </html>
